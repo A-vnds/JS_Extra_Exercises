@@ -1,0 +1,54 @@
+* {
+    font-family: 'Arial';
+    font-size: 20px;
+    box-sizing: border-box;
+    
+}
+
+
+
+table {
+    min-width: 700px;
+
+}
+
+
+tr,
+th,
+td {
+    border: 1px solid #525151;
+    padding: 5px;
+    text-align: center;
+}
+
+
+tr.table_headings {
+    color: #fff;
+    background-color: #1879c6;
+    font-size: 120%;
+    margin: 10px;
+}
+
+
+
+.gender-filter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.table-container {
+    width: 100%;
+}
+
+
+h5 {
+    margin-right: 10px;
+}
+select {
+   height: 40px;
+    margin-top: 25px;
+    font-size: 80%;
+}

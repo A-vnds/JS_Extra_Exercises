@@ -9,9 +9,24 @@ It's sounds hard but remember to think in little.
 */
 
 
-function addRow() {
-  var x = document.getElementById('myTable').insertRow(0);
-}
 
+
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = "Socrates";
+    
+       
+}
+    
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    console.log(bgColor);
+    document.querySelector('tr').style.background = bgColor;
+    }
 
 

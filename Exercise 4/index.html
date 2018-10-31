@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Exercises</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 
 <body>
 
+<div class='gender-filter'> 
+    <h5>Filter by Gender</h5>
+    
+    <select id="selectField" class= 'options-sel'>
+            <option value="All" selected>All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+
+    </select>
+
+</div>
+
+<div class='gender-filter'> 
+    <h5>Filter by Age</h5>
+    
+    <select id="selectAge" class= 'options-sel'>
+            <option value="All" selected>All</option>
+            <option value="older">Older than/or 30</option>
+            <option value="younger">Younger than 30</option>
+
+    </select>
+
+</div>
+
+<div class= 'table-container'>
+<table id='myTable'>
+   
+<thead>
+   <tr class='table_headings'>
+       <th>First Name</th>
+       <th>Age</th>
+       <th>Gender</th>      
+   </tr>
+</thead>
+    
+<tbody id='table'>
+    
+</tbody>
+    
+</table>
+</div>
+
+<script src='data.js'></script>
 </body>
 </html>
